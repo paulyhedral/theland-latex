@@ -6,15 +6,15 @@
 \captionsetup[table]{justification=raggedright, font={sf, bf, Large, color=concept}, skip=0.5ex}
 
 
-\newcommand\HeadRow{\rowfont{\noindent\sffamily\bfseries\color{black}}\rowcolor{white}}
+\newcommand\HeadRow{\rowfont{\noindent\sffamily\bfseries\color{textred}}}
 \newcommand\RowColors{\rowcolors{2}{tablewhite}{tablegrey}}
 
 \newenvironment{TheLandTable}[1]{%
-    \par\vspace*{8pt}\noindent\RowColors
-    \begin{tabu} to \linewidth {#1}
+    \par\vspace*{8pt}\noindent %\RowColors
+    \begin{longtabu} to \linewidth {#1}
     \HeadRow
   }
-{\end{tabu}}
+{\end{longtabu}}
 
 
 %%%%%
